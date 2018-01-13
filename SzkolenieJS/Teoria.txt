@@ -1,0 +1,105 @@
+Deklaracja zmiennych JS 
+var foo = 'bar';
+Domyslnie zmienna nie ma wartosci null, ma status undefined
+
+Nazywanie zmiennych
+JS jest case sensitive, mozemy uzywac liter, cyfr podkreślników i znaków dolara
+Nazwa zmiennej nie moze zaczynać się od cyfry, nie mogą zawierać słów kluczowych
+
+Operatory 
+arytmetyczne + - * / % ++ -- 
+Przypisanie = inkrementacje dekrementacje etc += -= *= /= %= 
+String + 
+Operatory porównania == (kuźniejsze, nie musza byc tego samego typu)
+                    === (wartosci po obustronach musza byc identyczne)
+                    !== - krotszy if
+logiczne && || !=
+typów typeof, instanceof
+bitowe 
+
+a==1 ? 10 : 20 - jeżeli a = 10 zwroc 10 else 20 
+IsNan - ?
+
+Konwersja typów
+parseint('242',10); //242
+kowercja typów true - '3' // -2 
+
+Truthy  falsy 
+falsy: 
+false, 0 "" null undefined IsNan
+Truthy
+xD
+
+Funkcje
+function MyFunc (arg0,arg1,arg2)
+{
+    //accessing all args together: 
+    console.log(arguments);
+    //do stuff
+    return arg0=arg1
+}
+
+var myOthFunc = function(){};
+nie ma voidów jako tako, jesli nie zwracamy nic to funkcja tak naprawde zwraca undefined
+Function call wygląda jak w sharpie
+
+Obiekty 
+paczka powiązanych ze sobą danych
+nie ma bezpośrednio klas, obiekty dziedziczą po obiektach
+do zmiennych w obiecie odwołujemy sie przy pomocy :
+this.foo // istnieje
+myOb['bar'];
+reszta jak w sharpie
+
+Obiekty tworzymy przy pomocy new 
+funcion car (make 
+// i am constructor)
+this.make = make;
+}
+var myCar = new Car('mazda')
+myCar.make; // mazda
+
+Obiektów nie trzeba deklarować na sztywno, można dynamicznie dopisywać do nich nowe pola po za ciałem i konmstrultorem (jprd xD)
+
+Większość rzecz yw JS jest obiektem. 
+Większośc obiektów dziedziczy z obiektu Object
+
+tablice
+
+nie ma tablic asocjacyjnych
+każdy elemenyt tablicy może byc inny, ideksowany od 0 
+var ad = [];
+tablica z 3 niezdefiniwanymi elementami [,,,]
+new array (3) - tablica z 3 elementami undefined 
+new array (3,5) - tablica z dwoam aelementami 3,5
+ sprawdzenie cz tablicaar.constructor == array;
+ ar instance of arrayArray.isArray(ar)
+  
+  komentarze sharpowe <3 
+
+STATEMMENTY KOCZYMY ; 
+jak w c 
+jesli nie postawimy ; to jest szansa ze js am nam semicolona dostawi 
+moze meic pewne nieprzewidziane komnsekwencje 
+Automatic semicolon instertion (ASI)
+
+switch (expression)
+{
+    case value1: 
+    {
+        xD
+        break;
+    }
+    default:
+    {
+        xdd
+        break;
+    }
+}
+
+Pętle
+for do ... while while break continue for...in for...of
+
+
+
+}
