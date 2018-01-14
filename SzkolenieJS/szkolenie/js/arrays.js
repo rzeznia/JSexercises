@@ -98,3 +98,51 @@ function womenOnly (arr) {
 //  John: 'knowing nothing',
 //  Arya: 'a killer to hire'
 // }
+
+function greetMe(repeats, string)
+{
+    i = 0;
+    do
+    {
+        var timeout = Math.floor((Math.random() * 1000) + 500);
+        setInterval((function(){ console.log(string)}),timeout);
+        i++;    
+    }while(i<repeats)
+}
+
+
+function greetMe(repeats, string)
+{
+    i = 0;
+    do
+    {
+        if(i < repeats)
+        {
+            var timeout = Math.floor((Math.random() * 1000) + 500);
+            setTimeout(setTimeout(function(){console.log(string),timeout}),timeout){};
+            i++;
+            continue;     
+        }
+        i++;    
+    }while(i < repeats)
+}
+
+function randTest()
+{
+    console.log(Math.floor((Math.random() * 1000) + 500));
+}
+
+function greetMe(repeats, string)
+{
+    var timeout = Math.floor((Math.random() * 500) + 500);
+    var idInterval;
+    for(var i = 0; i<repeats; i++)
+    {
+        idInterval = setTimeout((function(){ console.log(string)}),timeout);
+    }
+}
+
+
+greetMe(5, 'hello');
+greetMe(10, 'General Kenobi');
+
