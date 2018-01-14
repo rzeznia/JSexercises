@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img style="float:left" src="https://i.pinimg.com/736x/bf/77/fb/bf77fb4a936a56727721f23fe6ce3e0a--memes-humor-nerd-humor.jpg"/>
+    <img style="float: left" src="https://i.pinimg.com/564x/b2/1f/03/b21f03c4ae2c72a310df436f3400c434--meme-programming.jpg"/>
+    <img style="float: left" src="https://i.pinimg.com/736x/cf/8e/be/cf8ebe389f73c4c5e7a33f21b47a9ce5--python-programming-computer-coding.jpg"/>
+    <label for="load">Czas ładowania strony: </label>
+    <input type="text" name="load" id="loadxD" value="">
+    
+    <script type="text/javascript">
+    //STAMP DZIALA, NIE WYSWIETLA SIE
+        var startDate = 0; var dateStamp = 0;
+        document.addEventListener('readystatechange', checkReadyState);
+        function checkReadyState()
+        {
+            if(document.readyState == 'interactive')
+            {
+                startDate = new Date().getTime();
+            }
+            if(document.readyState == 'complete')
+            {
+                console.log("COMPLETE")
+                dateStamp = new Date().getTime();
+                dateStamp = dateStamp - startDate;
+            }
+        }
+        dateStamp;
+
+    </script>
+</body>
+</html>
